@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Modern Calculator</title>
+  <meta name="description" content="A modern, responsive calculator with basic arithmetic operations and a clean design">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator-wrapper">
+    <div class="calculator-container">
+      <!-- Display Section -->
+      <div class="calculator-display">
+        <div class="history-display" id="historyDisplay"></div>
+        <div class="result-display" id="display">0</div>
+      </div>
+      
+      <!-- Calculator Buttons Grid -->
+      <div class="calculator-keypad">
+        <!-- Row 1 -->
+        <button class="button clear" id="clear">C</button>
+        <button class="button operator" id="negate">+/-</button>
+        <button class="button operator" id="percent">%</button>
+        <button class="button operator" id="divide">÷</button>
+        
+        <!-- Row 2 -->
+        <button class="button digit" id="7">7</button>
+        <button class="button digit" id="8">8</button>
+        <button class="button digit" id="9">9</button>
+        <button class="button operator" id="multiply">×</button>
+        
+        <!-- Row 3 -->
+        <button class="button digit" id="4">4</button>
+        <button class="button digit" id="5">5</button>
+        <button class="button digit" id="6">6</button>
+        <button class="button operator" id="subtract">-</button>
+        
+        <!-- Row 4 -->
+        <button class="button digit" id="1">1</button>
+        <button class="button digit" id="2">2</button>
+        <button class="button digit" id="3">3</button>
+        <button class="button operator" id="add">+</button>
+        
+        <!-- Row 5 -->
+        <button class="button digit zero" id="0">0</button>
+        <button class="button digit" id="decimal">.</button>
+        <button class="button equals" id="equals">=</button>
+      </div>
+    </div>
+    
+    <!-- Recent Calculations Section -->
+    <div class="recent-calculations">
+      <h3>Recent Calculations</h3>
+      <ul id="recentCalculationsList"></ul>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
